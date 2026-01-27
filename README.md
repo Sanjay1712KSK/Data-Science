@@ -1,1 +1,1 @@
-# Data-Science
+# Data-Science - class time activities
