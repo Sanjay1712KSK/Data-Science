@@ -22,3 +22,5 @@ eyea=np.eye(4)
 print("Eye Array (4x4):\n",eyea,"\n")
 # Reshape a flat array of 12 elements into 3x4
 flat_array=np.arange(12)
+reshaped_3x4=flat_array.reshape(3,4)
+print("Reshaped Array (3x4):\n",reshaped_3x4,"\n")
