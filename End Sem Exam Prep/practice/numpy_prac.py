@@ -12,8 +12,11 @@ arr5=np.empty((2,2))
 print(arr5)'''
 # Array Operation Functions
 arr=np.array([1,2,3,4])
-print(np.max(arr))
+'''print(np.max(arr))
 print(np.min(arr))
 print(np.max(arr))
 print(np.sort(arr)) # Default is ascending 
-print(np.argmax(arr)) # Returns index of maximum value which is 4 here so the index of 4 is 3
+print(np.argmax(arr))''' # Returns index of maximum value which is 4 here so the index of 4 is 3
+arr2=np.array([5,6,7,8,9,10])
+'''a=np.concatenate((arr,arr2))
+print(a)'''
