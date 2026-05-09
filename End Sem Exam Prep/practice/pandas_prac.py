@@ -9,7 +9,7 @@ df = pd.DataFrame(data)
 # print("Original DataFrame:\n", df)
 # Generates synthetic data based on the original dictionary
 synthetic_names = ["Sanjay", "Kumar", "S", "Priya", "Amit", "Riya"]
-synthetic_ages = [18, 19, 20, 21, 22, 23, 24]
+synthetic_ages = [18, 19, 20, 21, 22, 23, 24,'']
 synd = {
     "Name": [random.choice(synthetic_names) for _ in range(10)],
     "Age": [random.choice(synthetic_ages) for _ in range(10)]
@@ -22,4 +22,4 @@ print("The Modified Data \n ",d)
 # DataFrame Operations
 # print(d.head()) # first 5 are printed
 # print(d.sort_values(by="Age"))
-print(d.drop_duplicates())
+# print(d.drop_duplicates())
