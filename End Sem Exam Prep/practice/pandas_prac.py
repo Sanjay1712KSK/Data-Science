@@ -18,3 +18,6 @@ synd = {
 d=pd.DataFrame(synd) # Where we use dataframe to structure it proeprly
 print("The Modified Data \n ",d)
 print("The UnModified Data \n",synd)
+
+# DataFrame Operations
+print(d.head())
