@@ -13,12 +13,13 @@ synthetic_ages = [18, 19, 20, 21, 22, 23, 24]
 synd = {
     "Name": [random.choice(synthetic_names) for _ in range(10)],
     "Age": [random.choice(synthetic_ages) for _ in range(10)]
-}
+} # Used random module with fixed names and ages along with list comprehension
 
 d=pd.DataFrame(synd) # Where we use dataframe to structure it proeprly
-# print("The Modified Data \n ",d)
+print("The Modified Data \n ",d)
 # print("The UnModified Data \n",synd)
 
 # DataFrame Operations
 # print(d.head()) # first 5 are printed
 # print(d.sort_values(by="Age"))
+print(d.drop_duplicates())
