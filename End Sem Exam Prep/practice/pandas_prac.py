@@ -15,6 +15,6 @@ synd = {
     "Age": [random.choice(synthetic_ages) for _ in range(10)]
 }
 
-'''d=pd.DataFrame(synd) # Where we use dataframe to structure it proeprly
+d=pd.DataFrame(synd) # Where we use dataframe to structure it proeprly
 print("The Modified Data \n ",d)
-print("The UnModified Data \n",synd)'''
+print("The UnModified Data \n",synd)
