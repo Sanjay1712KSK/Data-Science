@@ -1,4 +1,5 @@
 import pandas as pd
+import pandas as np
 import random
 # Series
 '''a=pd.Series([10,20,30])
@@ -9,7 +10,7 @@ df = pd.DataFrame(data)
 # print("Original DataFrame:\n", df)
 # Generates synthetic data based on the original dictionary
 synthetic_names = ["Sanjay", "Kumar", "S", "Priya", "Amit", "Riya"]
-synthetic_ages = [18, 19, 20, 21, 22, 23, 24,'']
+synthetic_ages = [18, 19, np.nan, 21, 22, 23, 24,'']
 synd = {
     "Name": [random.choice(synthetic_names) for _ in range(10)],
     "Age": [random.choice(synthetic_ages) for _ in range(10)]
@@ -20,7 +21,7 @@ d=pd.DataFrame(synd) # Where we use dataframe to structure it proeprly
 # print("Original DataFrame:\n", df)
 # Generates synthetic data based on the original dictionary
 synthetic_names2 = ["Sanjeev", "Singh", "A", "Jiya", "Thanu", "Kalaipuli"]
-synthetic_ages2 = [58, 69, 30, 31, 32, 29, 25,'']
+synthetic_ages2 = [58, 69, 30, 31, 32, 29, 25,np.nan]
 synd2 = {
     "Name": [random.choice(synthetic_names2) for _ in range(10)],
     "Age": [random.choice(synthetic_ages2) for _ in range(10)]
@@ -38,6 +39,8 @@ d6 = pd.DataFrame(synd2)
 print("THe one \n",d)'''
 '''m=pd.merge(d5,d6,on="Age")
 print(m)'''
-m1=pd.concat([d5,d6])
+'''m1=pd.concat([d5,d6])
 print(m1)
-a6=d5.join(d6)
+a6=d5.join(d6)'''
+print(d5.dropna())
+print(d6.dropna())
