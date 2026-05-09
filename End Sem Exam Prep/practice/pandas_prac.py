@@ -1,5 +1,5 @@
 import pandas as pd
-import pandas as np
+import numpy as np
 import random
 # Series
 '''a=pd.Series([10,20,30])
@@ -42,5 +42,7 @@ print(m)'''
 '''m1=pd.concat([d5,d6])
 print(m1)
 a6=d5.join(d6)'''
-print(d5.dropna())
-print(d6.dropna())
+'''print(d5.dropna())
+print(d6.dropna())'''
+print(d5.fillna(0))
+print(d6.fillna(0))
