@@ -3,3 +3,5 @@ import numpy as np
 print(arr)'''
 arr2=np.zeros((2,2))
 print(arr2)
+arr3=np.ones((2,2))
+print(arr3)
