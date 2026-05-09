@@ -6,7 +6,7 @@ print(a)'''
 # DataFrame
 data = {"Name": ["Sanjay", "Kumar", "S"], "Age": [20, 21, 20]}  # We have normal dictionary type here
 df = pd.DataFrame(data)
-print("Original DataFrame:\n", df)
+# print("Original DataFrame:\n", df)
 # Generates synthetic data based on the original dictionary
 synthetic_names = ["Sanjay", "Kumar", "S", "Priya", "Amit", "Riya"]
 synthetic_ages = [18, 19, 20, 21, 22, 23, 24]
