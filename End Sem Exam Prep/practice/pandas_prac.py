@@ -40,3 +40,4 @@ print("THe one \n",d)'''
 print(m)'''
 m1=pd.concat([d5,d6])
 print(m1)
+a6=d5.join(d6)
