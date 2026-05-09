@@ -5,29 +5,29 @@ import random
 '''a=pd.Series([10,20,30])
 print(a)'''
 # DataFrame
-data = {"Name": ["Sanjay", "Kumar", "S"], "Age": [20, 21, 20]}  # We have normal dictionary type here
-df = pd.DataFrame(data)
+'''data = {"Name": ["Sanjay", "Kumar", "S"], "Age": [20, 21, 20]}  # We have normal dictionary type here
+df = pd.DataFrame(data)'''
 # print("Original DataFrame:\n", df)
 # Generates synthetic data based on the original dictionary
-synthetic_names = ["Sanjay", "Kumar", "S", "Priya", "Amit", "Riya"]
+'''synthetic_names = ["Sanjay", "Kumar", "S", "Priya", "Amit", "Riya"]
 synthetic_ages = [18, 19, np.nan, 21, 22, 23, 24,'']
 synd = {
     "Name": [random.choice(synthetic_names) for _ in range(10)],
     "Age": [random.choice(synthetic_ages) for _ in range(10)]
 } # Used random module with fixed names and ages along with list comprehension
 
-d=pd.DataFrame(synd) # Where we use dataframe to structure it proeprly
+d=pd.DataFrame(synd)''' # Where we use dataframe to structure it proeprly
 # Second Synthetic Data Generation
 # print("Original DataFrame:\n", df)
 # Generates synthetic data based on the original dictionary
-synthetic_names2 = ["Sanjeev", "Singh", "A", "Jiya", "Thanu", "Kalaipuli"]
+'''synthetic_names2 = ["Sanjeev", "Singh", "A", "Jiya", "Thanu", "Kalaipuli"]
 synthetic_ages2 = [58, 69, 30, 31, 32, 29, 25,np.nan]
 synd2 = {
     "Name": [random.choice(synthetic_names2) for _ in range(10)],
     "Age": [random.choice(synthetic_ages2) for _ in range(10)]
 }
 d5 = pd.DataFrame(synd)
-d6 = pd.DataFrame(synd2)
+d6 = pd.DataFrame(synd2)'''
 # print("The Modified Data \n ",d)
 # print("The UnModified Data \n",synd)
 # DataFrame Operations
@@ -44,5 +44,15 @@ print(m1)
 a6=d5.join(d6)'''
 '''print(d5.dropna())
 print(d6.dropna())'''
-print(d5.fillna(0))
-print(d6.fillna(0))
+'''print(d5.fillna(0))
+print(d6.fillna(0))'''
+d1=pd.DataFrame({"Name":["Sanjay","Kumar"]},index=[1,2])
+d2=pd.DataFrame({"Roll_no":[21,22]},index=[1,2])
+'''print(d1)
+print(d2)'''
+'''print("\n Joined Dataframe output \n")
+print(d1.join(d2))'''
+d3=d1.reindex(['A','B'])
+d4=d2.reindex(['C','D'])
+print(d3)
+print(d4)
