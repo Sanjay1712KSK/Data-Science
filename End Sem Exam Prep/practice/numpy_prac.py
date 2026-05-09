@@ -20,3 +20,6 @@ print(np.argmax(arr))''' # Returns index of maximum value which is 4 here so the
 arr2=np.array([5,6,7,8,9,10])
 '''a=np.concatenate((arr,arr2))
 print(a)'''
+# print(arr2.reshape(3,2))
+# print(arr2.reshape(2,3))
+# CH-1 Ends
