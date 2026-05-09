@@ -16,3 +16,4 @@ print(np.max(arr))
 print(np.min(arr))
 print(np.max(arr))
 print(np.sort(arr)) # Default is ascending 
+print(np.argmax(arr)) # Returns index of maximum value which is 4 here so the index of 4 is 3
