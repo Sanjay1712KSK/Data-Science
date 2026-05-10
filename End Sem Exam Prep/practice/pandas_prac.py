@@ -56,3 +56,4 @@ d3=d1.reindex(['A','B'])
 d4=d2.reindex(['C','D'])
 print(d3)
 print(d4)
+# Reshape and matplotlib is still pending.
