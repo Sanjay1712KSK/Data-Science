@@ -79,3 +79,92 @@ print(p)
 print(p.summarise())
 print(c.summarise())
 # Binning sample snippet
+# Equal Width
+p["Category"]=pd.cut(p["Age"],bins=[10,20,30],labels=["Young","Adult","Older-Adult"])
+# Equal Frequency
+p["Category"]=pd.qcut(p["Age"],bins=[10,20,30],labels=["Young","Adult","Older-Adult"])
+
+# String Manipulation 15 Marks
+
+'''STRING MANIPULATION IN PYTHON
+Definition
+
+String manipulation refers to the process of modifying, cleaning, formatting, and processing textual data using various string operations and functions in Python.
+
+It is widely used in:
+
+Data Cleaning
+NLP
+Web Scraping
+Data Wrangling
+Importance
+
+String manipulation helps:
+
+Remove unwanted spaces
+Standardize text format
+Extract useful information
+Clean inconsistent entries
+Prepare textual data for analysis
+Common String Operations
+Function	Purpose
+strip()	remove spaces
+lower()	lowercase conversion
+upper()	uppercase conversion
+replace()	replace text
+split()	split string
+join()	combine strings
+find()	locate substring
+Example 1 — Remove Spaces
+name = " Ram "
+
+print(name.strip())'''
+
+'''Output:
+
+Ram
+Example 2 — Convert to Uppercase'''
+
+city = "chennai"
+
+print(city.upper())
+
+'''Output:
+
+CHENNAI
+Example 3 — Replace Text'''
+
+text = "POS"
+
+print(text.replace("POS","Positive"))
+
+'''Output:
+
+Positive
+Example 4 — Split String'''
+
+sentence = "Data Science"
+
+print(sentence.split())
+
+'''Output:
+
+['Data', 'Science']'''
+
+# String Manipulation in Pandas
+df["City"] = df["City"].str.strip().str.title()
+
+'''Purpose:
+
+removes spaces
+converts first letter uppercase.
+Applications of String Manipulation
+Cleaning customer names
+Standardizing city names
+Email processing
+Sentiment analysis
+Text preprocessing in NLP
+Conclusion
+
+String manipulation is an essential preprocessing technique in Data Science used to clean, transform, and standardize textual data for accurate analysis and machine learning applications.
+'''
