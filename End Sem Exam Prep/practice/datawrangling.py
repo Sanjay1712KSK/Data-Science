@@ -51,7 +51,8 @@ print(p)
 print(p.summarise())
 
 # Covid Data-set
-'''Data Quality Issues
+'''
+Data Quality Issues
     Missing values in age and gender
     Misspelled city names
     Inconsistent test results:
@@ -62,3 +63,14 @@ print(p.summarise())
         Age > 200
         Duplicate records
 '''
+c=pd.read_csv("covid_data.csv")
+c=c.drop_duplicates()
+c["Age"]=c["Age"].fillna(c["Age"].mean())
+c["Gender"]=c["Gender"].fillna("Unknown")
+c["Test_Result"]=c["Test_Result"].replace({"positive":"Positive", "+ve":"Positive", "pos":"Positive", "Pos":"Positive"})
+c["City"]=c["City"].str.strip()
+Q1=c["Age"].quantile(0.25)
+Q3=c["Age"].quantile(0.75)
+IQR=Q3-Q1
+lower=Q1-1.5*(IQR)
+upper=Q3+1.5*(IQR)
