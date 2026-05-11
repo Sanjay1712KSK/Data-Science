@@ -76,3 +76,5 @@ lower=Q1-1.5*(IQR)
 upper=Q3+1.5*(IQR)
 p=p[(p["Age"]>=lower)&(p["Age"]<=upper)]
 print(p)
+print(p.summarise())
+print(c.summarise())
