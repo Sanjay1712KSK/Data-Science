@@ -49,3 +49,16 @@ p=p[(p("Age")>=lower)&(p("Age")<=upper)]
 print(p)
 # Data summarization
 print(p.summarise())
+
+# Covid Data-set
+'''Data Quality Issues
+    Missing values in age and gender
+    Misspelled city names
+    Inconsistent test results:
+    Positive
+    POS
+    +ve
+    Unrealistic outliers:
+        Age > 200
+        Duplicate records
+'''
