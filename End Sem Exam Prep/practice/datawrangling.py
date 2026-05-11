@@ -32,4 +32,20 @@ p["Gender"]=p["Gender"].fillna("Unknown")
 # same for negative
 p["Result"]=p["Result"].replace({"positive":"Positive", "+ve":"Positive", "pos":"Positive", "Pos":"Positive"})
 p["City"]=p["City"].str.strip().str.title()
-
+# binning and classing
+# No need of categorical need here
+# Data Standardization
+from sklearn.preprocessing import StandardScaler as ss
+scaler=ss()
+p["Test_Score"]=scaler.fit_transform(p[["Test_Score"]])
+print(p)
+# IQR Outlier correction
+Q1=p["Age"].quantile(0.25)
+Q3=p["Age"].quantile(0.75)
+IQR=Q3-Q1
+lower=Q1-1.5*IQR
+upper=Q3+1.5*IQR
+p=p[(p("Age")>=lower)&(p("Age")<=upper)]
+print(p)
+# Data summarization
+print(p.summarise())
