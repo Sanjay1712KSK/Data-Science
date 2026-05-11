@@ -68,9 +68,11 @@ c=c.drop_duplicates()
 c["Age"]=c["Age"].fillna(c["Age"].mean())
 c["Gender"]=c["Gender"].fillna("Unknown")
 c["Test_Result"]=c["Test_Result"].replace({"positive":"Positive", "+ve":"Positive", "pos":"Positive", "Pos":"Positive"})
-c["City"]=c["City"].str.strip()
+c["City"]=c["City"].str.strip().str.title()
 Q1=c["Age"].quantile(0.25)
 Q3=c["Age"].quantile(0.75)
 IQR=Q3-Q1
 lower=Q1-1.5*(IQR)
 upper=Q3+1.5*(IQR)
+p=p[(p["Age"]>=lower)&(p["Age"]<=upper)]
+print(p)
