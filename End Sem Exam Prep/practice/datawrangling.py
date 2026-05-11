@@ -21,6 +21,7 @@ import pandas as pd
 import numpy as np
 p=pd.read_csv("healthcare.csv")
 # Data cleaning
+p=p.drop_duplicates()
 p["Name"]=p["Name"].str.strip() 
 # Handling missing values
 p["Age"]=p["Age"].fillna(p["Age"].mean())
