@@ -30,7 +30,7 @@ p["Gender"]=p["Gender"].fillna("Unknown")
 ''' NO NEED OF TRANSFORMATION HERE AS ALL ARE IN CORRECT TYPE'''
 # String manipulation
 # same for negative
-p["Result"]=p["Result"].replace({"positive":"Positive", "+ve":"Positive", "pos":"Positive", "Pos":"Positive"})
+p["Test_Result"]=p["Result"].replace({"positive":"Positive", "+ve":"Positive", "pos":"Positive", "Pos":"Positive"})
 p["City"]=p["City"].str.strip().str.title()
 p["Diagnosis"]=p["Diagnosis"].str.strip().str.title()
 # binning and classing
