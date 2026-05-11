@@ -78,3 +78,4 @@ p=p[(p["Age"]>=lower)&(p["Age"]<=upper)]
 print(p)
 print(p.summarise())
 print(c.summarise())
+# Binning sample snippet
