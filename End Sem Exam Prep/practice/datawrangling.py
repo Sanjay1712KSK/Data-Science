@@ -25,3 +25,8 @@ p["Name"]=p["Name"].str.strip()
 # Handling missing values
 p["Age"]=p["Age"].fillna(p["Age"].mean())
 p["Gender"]=p["Gender"].fillna("Unknown")
+# Data transformation
+''' NO NEED OF TRANSFORMATION HERE AS ALL ARE IN CORRECT TYPE'''
+# String manipulation
+# same for negative
+p["Result"]=p["Result"].replace({"positive":"Positive", "+ve":"Positive", "pos":"Positive", "Pos":"Positive"})
