@@ -1,0 +1,9 @@
+Patient_ID,Age,Gender,City,Test_Result,Hospitalized
+201,35.0,Male,Chennai ,Positive,Yes
+202,,Female,chennai,POS,No
+203,42.0,,Mumbai ,+ve,Yes
+204,250.0,Male,mumbai,Negative,Yes
+205,28.0,Female,Delhi,NEG,No
+206,31.0,Male,DELHI,Positive,No
+207,,Female,Bangalore ,+ve,Yes
+208,47.0,,bangalore,POS,No

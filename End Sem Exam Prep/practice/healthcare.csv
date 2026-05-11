@@ -1,0 +1,9 @@
+Patient_ID,Name,Age,Gender,Diagnosis,Test_Result,City,TestScore
+101,Ram,25.0,Male,Diabetes,Positive,Chennai ,85
+102,Sam ,,Female,diabetes,POS,chennai,90
+103,John,34.0,,Heart Disease,+ve,Mumbai,88
+104,Priya,210.0,Male,HEART disease,Negative,mumbai ,500
+105,Arun,45.0,Female,Cancer,NEG,Delhi,76
+106,Meena,52.0,Female,Cancer,Positive,DELHI,82
+107,Kiran,,Male,Asthma,+ve,Bangalore,91
+108,Divya,29.0,Female,Asthma,POS,bangalore ,87
