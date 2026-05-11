@@ -30,7 +30,7 @@ p["Gender"]=p["Gender"].fillna("Unknown")
 ''' NO NEED OF TRANSFORMATION HERE AS ALL ARE IN CORRECT TYPE'''
 # String manipulation
 # same for negative
-p["Test_Result"]=p["Result"].replace({"positive":"Positive", "+ve":"Positive", "pos":"Positive", "Pos":"Positive"})
+p["Test_Result"]=p["Test_Result"].replace({"positive":"Positive", "+ve":"Positive", "pos":"Positive", "Pos":"Positive"})
 p["City"]=p["City"].str.strip().str.title()
 p["Diagnosis"]=p["Diagnosis"].str.strip().str.title()
 # binning and classing
@@ -38,7 +38,7 @@ p["Diagnosis"]=p["Diagnosis"].str.strip().str.title()
 # Data Standardization
 from sklearn.preprocessing import StandardScaler as ss
 scaler=ss()
-p["Test_Score"]=scaler.fit_transform(p[["Test_Score"]])
+p["TestScore"]=scaler.fit_transform(p[["TestScore"]])
 print(p)
 # IQR Outlier correction
 # For Age
@@ -47,7 +47,7 @@ Q3=p["Age"].quantile(0.75)
 IQR=Q3-Q1
 lower=Q1-1.5*IQR
 upper=Q3+1.5*IQR
-p=p[(p("Age")>=lower)&(p("Age")<=upper)]
+p=p[(p["Age"]>=lower)&(p["Age"]<=upper)]
 print(p)
 # For TestScore
 Q1=p["TestScore"].quantile(0.25)
@@ -55,10 +55,10 @@ Q3=p["TestScore"].quantile(0.75)
 IQR=Q3-Q1
 lower=Q1-1.5*IQR
 upper=Q3+1.5*IQR
-p=p[(p("TestScore")>=lower)&(p("TestScore")<=upper)]
+p=p[(p["TestScore"]>=lower)&(p["TestScore"]<=upper)]
 print(p)
 # Data summarization
-print(p.summarise())
+print(p.describe())
 
 # Covid Data-set
 '''
@@ -86,13 +86,13 @@ lower=Q1-1.5*(IQR)
 upper=Q3+1.5*(IQR)
 p=p[(p["Age"]>=lower)&(p["Age"]<=upper)]
 print(p)
-print(p.summarise())
-print(c.summarise())
+print(p.describe())
+print(c.describe())
 # Binning sample snippet
 # Equal Width
-p["Category"]=pd.cut(p["Age"],bins=[10,20,30],labels=["Young","Adult","Older-Adult"])
+# p["Category"]=pd.cut(p["Age"],bins=[10,20,30],labels=["Young","Adult","Older-Adult"])
 # Equal Frequency
-p["Category"]=pd.qcut(p["Age"],bins=[10,20,30],labels=["Young","Adult","Older-Adult"])
+# p["Category"]=pd.qcut(p["Age"],bins=[10,20,30],labels=["Young","Adult","Older-Adult"])
 
 # String Manipulation 15 Marks
 
@@ -162,7 +162,7 @@ print(sentence.split())
 ['Data', 'Science']'''
 
 # String Manipulation in Pandas
-df["City"] = df["City"].str.strip().str.title()
+p["City"] = p["City"].str.strip().str.title()
 
 '''Purpose:
 
