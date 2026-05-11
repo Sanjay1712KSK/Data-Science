@@ -30,3 +30,5 @@ p["Gender"]=p["Gender"].fillna("Unknown")
 # String manipulation
 # same for negative
 p["Result"]=p["Result"].replace({"positive":"Positive", "+ve":"Positive", "pos":"Positive", "Pos":"Positive"})
+p["City"]=p["City"].str.strip().str.title()
+
