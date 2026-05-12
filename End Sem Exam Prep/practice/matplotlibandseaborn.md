@@ -160,3 +160,17 @@ identify growth trends
 detect anomalies
 compare regions
 support business decisions
+
+(b) Regression Line using Seaborn
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.regplot(
+    x='Size (sq ft)',
+    y='Price ($)',
+    data=df
+)
+
+plt.title("Regression Line")
+
+plt.show()
