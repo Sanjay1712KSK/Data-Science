@@ -121,3 +121,42 @@ fig=plt.figure()
 ax=fig.add_subplot(111,projection='3d')
 ax.plot_surface(X,Y,Z)
 plt.savefig("3dgraph.jpg")
+
+Q23
+Financial Analyst Visualization Question
+Line Plot
+
+Shows:
+
+revenue trends over years
+Bar Plot
+
+Compares:
+
+regional profits
+expenditures
+Histogram
+
+Displays:
+
+frequency distribution
+revenue spread
+Boxplot
+
+Identifies:
+
+anomalies
+outliers
+Pairplot
+
+Shows:
+
+relationships between revenue, expenditure, and profit
+Strategic Benefits
+
+These visualizations help:
+
+identify growth trends
+detect anomalies
+compare regions
+support business decisions
