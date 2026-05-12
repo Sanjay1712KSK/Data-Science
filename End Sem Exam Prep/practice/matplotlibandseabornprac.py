@@ -352,3 +352,41 @@ ax = fig.add_subplot(
 ax.plot_surface(X,Y,Z)
 
 plt.savefig("/home/sanjaykumars/Desktop/DS/End Sem Exam Prep/matplotlibandseabornoutputscreenshots/3dplot.jpg")
+
+'''
+| Function       | Purpose        |
+| -------------- | -------------- |
+| plt.plot()     | line plot      |
+| plt.scatter()  | scatter plot   |
+| plt.bar()      | bar plot       |
+| plt.hist()     | histogram      |
+| plt.boxplot()  | box plot       |
+| plt.subplot()  | multiple plots |
+| plt.savefig()  | save graph     |
+| plt.annotate() | add text       |
+| sns.pairplot() | pairwise plots |
+| sns.heatmap()  | heatmap        |
+'''
+
+'''
+MEMORY TRICKS
+Histogram
+
+Frequency distribution
+
+Scatter Plot
+
+Relationship between variables
+
+Boxplot
+
+Outlier detection
+
+Pairplot
+
+All pairwise relations
+
+subplot()
+
+Many graphs in one figure
+'''
