@@ -467,20 +467,19 @@ This repository is provided for educational purposes. See LICENSE file in the PY
 
 ## 🎓 Course Information
 
-**Course Code:** 21CSS303T  
+**Course Code:** 21CSS303T (21 Regulation)
 **Course Name:** Data Science  
-**Institution:** VIT (Vellore Institute of Technology)  
-**Semester:** 5th/6th  
-**Credits:** Varies by semester  
+**Institution:** SRMIST (SRM Institute of Science & Technology) - Kattankulathur
+**Semester:** 6th  
 
 ---
 
 ## 🔗 Quick Links
 
-- 📄 [Course Syllabus](End%20Sem%20Exam%20Prep/PYQs/21CSS303T%20-%20Data%20Science%20Syllabus.pdf)
-- 📊 [Wind Dataset](Datasets/phase1_acknowledged_wind.csv)
-- 📚 [Question Bank](End%20Sem%20Exam%20Prep/PYQs/Question%20Bank_Data%20Science.docx)
-- 🎨 [Visualization Gallery](End%20Sem%20Exam%20Prep/matplotlibandseabornoutputscreenshots/)
+- 📄 [Course Syllabus](https://github.com/Sanjay1712KSK/Data-Science-21CSS303T/blob/main/End%20Sem%20Exam%20Prep/21CSS303T%20-%20Data%20Science%20Syllabus.pdf)
+- 📊 [Wind Dataset](https://github.com/Sanjay1712KSK/Data-Science-21CSS303T/blob/main/Datasets/phase1_acknowledged_wind.csv)
+- 📚 [Question Bank](https://github.com/Sanjay1712KSK/Data-Science-21CSS303T/blob/main/End%20Sem%20Exam%20Prep/PYQs/Question%20Bank_Data%20Science.docx)
+- 🎨 [Visualization Gallery]([End%20Sem%20Exam%20Prep/matplotlibandseabornoutputscreenshots/](https://github.com/Sanjay1712KSK/Data-Science-21CSS303T/tree/main/End%20Sem%20Exam%20Prep/matplotlibandseabornoutputscreenshots))
 
 ---
 
@@ -499,5 +498,5 @@ You'll find relevant, well-organized content with clear explanations and real-wo
 ---
 
 *Last Updated: May 12, 2026*  
-*Maintained by: Sanjay1712KSK*  
+*Maintained by: [Sanjay Kumar S](https://github.com/Sanjay1712KSK)*  
 *Repository: [Data-Science-21CSS303T](https://github.com/Sanjay1712KSK/Data-Science-21CSS303T)*
