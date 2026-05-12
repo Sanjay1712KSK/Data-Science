@@ -18,7 +18,7 @@ plt.plot(x, y)
 plt.title("Line Plot")
 plt.xlabel("X Values")
 plt.ylabel("Y Values")
-plt.show()
+plt.savefig("/home/sanjaykumars/Desktop/DS/End Sem Exam Prep/matplotlibandseabornoutputscreenshots/lineplot.jpg")
 
 '''
 | Function | Purpose          |
@@ -42,7 +42,7 @@ x = [1,2,3,4]
 y = [10,20,15,30]
 plt.scatter(x, y)
 plt.title("Scatter Plot")
-plt.show()
+plt.savefig("/home/sanjaykumars/Desktop/DS/End Sem Exam Prep/matplotlibandseabornoutputscreenshots/scatterplot.jpg")
 
 '''4. BAR PLOT
 Purpose
@@ -55,7 +55,7 @@ students = ["Ram","Sam","John"]
 marks = [80,90,75]
 plt.bar(students, marks)
 plt.title("Bar Plot")
-plt.show()
+plt.savefig("/home/sanjaykumars/Desktop/DS/End Sem Exam Prep/matplotlibandseabornoutputscreenshots/barplot.jpg")
 
 '''5. HISTOGRAM
 
@@ -74,7 +74,7 @@ plt.hist(data, bins=4)
 
 plt.title("Histogram")
 
-plt.show()
+plt.savefig("/home/sanjaykumars/Desktop/DS/End Sem Exam Prep/matplotlibandseabornoutputscreenshots/histogram.jpg")
 
 '''Important Parameter
 bins
@@ -99,7 +99,7 @@ plt.boxplot(data)
 
 plt.title("Box Plot")
 
-plt.show()
+plt.savefig("/home/sanjaykumars/Desktop/DS/End Sem Exam Prep/matplotlibandseabornoutputscreenshots/boxplot.jpg")
 
 '''
 7. PIE CHART
@@ -114,7 +114,7 @@ labels = ["A","B","C","D"]
 
 plt.pie(sizes, labels=labels)
 
-plt.show()
+plt.savefig("/home/sanjaykumars/Desktop/DS/End Sem Exam Prep/matplotlibandseabornoutputscreenshots/piechart.jpg")
 
 '''8. MULTIPLE PLOTS (SUBPLOTS)
 
@@ -128,7 +128,7 @@ plt.subplot(1,2,1)
 plt.plot(x,y)
 plt.subplot(1,2,2)
 plt.bar(x,y)
-plt.show()
+plt.savefig("/home/sanjaykumars/Desktop/DS/End Sem Exam Prep/matplotlibandseabornoutputscreenshots/multipleplots.jpg")
 '''
 Meaning of:
 subplot(rows, columns, position)
@@ -143,34 +143,6 @@ means:
 2 columns
 first plot
 '''
-'''8. MULTIPLE PLOTS (SUBPLOTS)
-
-VERY IMPORTANT PYQ.
-
-Python Code
-x = [1,2,3]
-y = [2,4,6]
-'''
-plt.subplot(1,2,1)
-plt.plot(x,y)
-
-plt.subplot(1,2,2)
-plt.bar(x,y)
-
-plt.show()
-'''
-Meaning of:
-subplot(rows, columns, position)
-
-Example:
-
-subplot(1,2,1)
-
-means:
-
-1 row
-2 columns
-first plot'''
 
 '''9. CONTROLLING AXES
 Python Code'''
@@ -183,7 +155,7 @@ plt.plot(x,y)
 plt.xlim(0,5)
 plt.ylim(0,50)
 
-plt.show()
+plt.savefig("/home/sanjaykumars/Desktop/DS/End Sem Exam Prep/matplotlibandseabornoutputscreenshots/lineplot_controlling_axes.jpg")
 
 '''
 | Function | Purpose        |
